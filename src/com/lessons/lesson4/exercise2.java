@@ -5,13 +5,13 @@ import java.util.Arrays;
 public class exercise2 {
 
 
-        static int[] arr = {17, 2, 33, 4, 5, 7, 6};
-        static int max;
-        static int min;
-        static int i;
-        static int index1;
+         static int[] arr = {17, 2, 33, 4, 5, 7, 6};
+         int max;
+         int min;
+         int i;
+         int index1;
 
-        public static void main (String [] args){
+        public static void array (){
 
 
             Arrays.sort(arr);
