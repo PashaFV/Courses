@@ -29,9 +29,12 @@ public class Director extends Employee {
 
     @Override
     public String toString() {
-        return "Director{" +
-                "employees=" + Arrays.toString(employees) +
-                ", position=" + position +
+        return "Директор {" +
+                " Имя директора = " + FirstName  + " " +
+                " Фамилия директора = " + SecondName  + " " +
+                " Должность =" + position + " " +
+                " ЗП = " + getSalary() + " " +
+                " В подчинении = " + Arrays.toString(employees) + " " +
                 '}';
     }
 

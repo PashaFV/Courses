@@ -4,8 +4,8 @@ import com.lessons.lesson4.GenderEnum;
 
 public class Person {
 
-    private String FirstName;
-    private String SecondName;
+    protected String FirstName;
+    protected String SecondName;
 
     public Person (String FirstName, String SecondName) {
         this.FirstName = FirstName;
