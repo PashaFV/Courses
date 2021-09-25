@@ -32,7 +32,11 @@ public class main4 {
 //        ex6.value(2);
 //        ex6.value(3,6, "test");
 
+//        exercise7User Alex = new exercise7User ("Alex", "Ivanov", 17, GenderEnum.MALE);
+//        Alex.main();
 
+//        exercise8 ex8 = new exercise8();
+//        ex8.classInPackage();
 
 
 
