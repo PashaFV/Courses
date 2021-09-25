@@ -28,6 +28,9 @@ public class main4 {
 //      exercise5 ex5 = new exercise5();
 //      ex5.word();
 
+//        exercise6 ex6 = new exercise6();
+//        ex6.value(2);
+//        ex6.value(3,6, "test");
 
 
 
