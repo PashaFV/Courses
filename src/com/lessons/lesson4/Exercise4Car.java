@@ -19,14 +19,16 @@ public class Exercise4Car {
 
         }
 
-        public static void main(String[] args) {
+        public void infoCar() {
 
 
-            Exercise4Car VolkswagenE = new Exercise4Car("ID3", 199 );
-            Exercise4Car Volkswagen = new Exercise4Car("Golf", 187, 1.2);
-            System.out.println(Volkswagen.model);
-            System.out.println(Volkswagen.maxSpeed);
-            System.out.println(Volkswagen.turbocharging);
+            System.out.println("Модель - " +model);
+            System.out.println("Максимальная скорость - " + maxSpeed);
+            if(turbocharging==0) {
+                System.out.println("Без Турбонаддува " );
+            }else {
+                System.out.println("Турбонаддув -" + turbocharging);
+            }
         }
 
 

@@ -15,8 +15,20 @@ public class main4 {
 //     ex2.array();
 
 
-//        exercise3User Ivan = new exercise3User ("Ivan", "Ivanov", 17, GenderEnum.MALE);
-//        Ivan.main();
+//      exercise3User Ivan = new exercise3User ("Ivan", "Ivanov", 17, GenderEnum.MALE);
+//      Ivan.main();
+
+
+//      Exercise4Car VolkswagenE = new Exercise4Car("ID3", 199 );
+//      VolkswagenE.infoCar();
+//      Exercise4Car Volkswagen = new Exercise4Car("Golf", 187, 1.2);
+//      Volkswagen.infoCar();
+
+
+//      exercise5 ex5 = new exercise5();
+//      ex5.word();
+
+
 
 
 
