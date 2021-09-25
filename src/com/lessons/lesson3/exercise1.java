@@ -1,3 +1,5 @@
+//Создать массив на n-элементов и заполнить его числами фиббоначи.
+
 package com.lessons.lesson3;
 
 import java.util.Arrays;

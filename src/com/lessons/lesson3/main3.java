@@ -24,11 +24,11 @@ public class main3 {
 //        exercise2 ex2 = new exercise2();
 //        exercise2.exercisetwo();
 
-        exercise3 ex3 = new exercise3();
-        exercise3.exercisethree();
+//        exercise3 ex3 = new exercise3();
+//        exercise3.exercisethree();
 
-//        exercise4 ex4 = new exercise4();
-//       exercise4.exercisefour();
+        exercise4 ex4 = new exercise4();
+        exercise4.exercisefour();
 
 
 

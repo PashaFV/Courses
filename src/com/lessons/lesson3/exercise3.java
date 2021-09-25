@@ -1,3 +1,5 @@
+//Найти разницу между суммой элементов стоящих на четных и нечетных местах.
+
 package com.lessons.lesson3;
 
 public class exercise3 {

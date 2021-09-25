@@ -1,3 +1,5 @@
+//В произвольном массиве найти сумму минимального и максимального элементов.
+
 package com.lessons.lesson3;
 
 import java.util.Arrays;
