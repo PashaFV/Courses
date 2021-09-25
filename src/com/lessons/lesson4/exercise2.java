@@ -1,3 +1,6 @@
+//Создать класс для работы с  массивами чисел. Создать методы для сортировки, нахождения максимального элемента, поиска номера элемента в массиве по его значению (любое вхождение). Всю общую логику вынести в приватные методы.
+
+
 package com.lessons.lesson4;
 
 import java.util.Arrays;
@@ -5,29 +8,25 @@ import java.util.Arrays;
 public class exercise2 {
 
 
-         static int[] arr = {17, 2, 33, 4, 5, 7, 6};
+         int[] arr = {17, 2, 33, 4, 5, 7, 6};
          int max;
          int min;
          int i;
          int index1;
 
-        public static void array (){
+        public void array (){
 
 
             Arrays.sort(arr);
-
             System.out.println(Arrays.toString(arr) + " - Отсортированный массив");
-            //System.out.println("Максимальное число = " + max);
-            //System.out.println("Индекс = " + i);
 
             exercisetwomax();
 
             exercisefind();
 
-
         }
 
-        private static void exercisetwomax() {
+        private void exercisetwomax() {
 
             int max = arr[0];
 
@@ -38,20 +37,15 @@ public class exercise2 {
                 }
             }
 
-
             System.out.println("Максимальное число = " + max);
 
-
         }
 
+        private void exercisefind() {
 
-        private static void exercisefind() {
-
-            System.out.println("Индекс числа 33 в массиве - " + Arrays.binarySearch(arr, 33));
-
+            System.out.println("Индекс числа максимального числа в отсортированном массиве - " + Arrays.binarySearch(arr, 33));
 
         }
-
 
     }
 

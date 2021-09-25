@@ -1,45 +1,43 @@
-package com.lessons.lesson4;
+//Переписать задачу о сезонах на enum реализацию (switch)
 
-import java.util.Scanner;
+package com.lessons.lesson4;
 
 
 public class exercise1 {
 
-    public static void main(String[] args) {
+    public static void exerciseone() {
 
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите месяц: ");
-        String season = in.nextLine();
+        SeasonsEnum month = SeasonsEnum.APRIL;
 
-        switch (season) {
+        switch (month) {
 
-            case "декабрь":
-            case "январь":
-            case "февраль":
+            case DECEMBER:
+            case JANUARY:
+            case FEBRUARY:
 
-                System.out.println("Пора года - " + SeasonsEnum.WINTER);
+                System.out.println("Месяц - " + month + " относится к поре года Зима");
                 break;
 
-            case "март":
-            case "апрель":
-            case "май":
+            case MARTH:
+            case APRIL:
+            case MAY:
 
-                System.out.println("Пора года - " + SeasonsEnum.SPRING);
+                System.out.println("Месяц - " + month + " относится к поре года Весна");
                 break;
 
-            case "июнь":
-            case "июль":
-            case "август":
+            case JUNE:
+            case JULY:
+            case AUGUST:
 
-                System.out.println("Пора года - " + SeasonsEnum.SUMMER);
+                System.out.println("Месяц - " + month + " относится к поре года Лето");
                 break;
 
-            case "сентябрь":
-            case "октябрь":
-            case "ноябрь":
+            case SEPTEMBER:
+            case OCTOBER:
+            case NOVEMBER:
 
-                System.out.println("Пора года - " + SeasonsEnum.AUTUMN);
+                System.out.println("Месяц - " + month + " относится к поре года Осень");
                 break;
 
             default:
