@@ -11,6 +11,10 @@ public class Director extends Employee {
 
     }
 
+    public Employee[] getEmployees() {
+        return employees;
+    }
+
     public void addWorker(Employee employee) {
        if (employees == null){
            employees = new Employee[1];

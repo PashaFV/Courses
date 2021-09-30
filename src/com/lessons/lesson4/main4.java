@@ -19,10 +19,10 @@ public class main4 {
 //      Ivan.main();
 
 
-//      Exercise4Car VolkswagenE = new Exercise4Car("ID3", 199 );
-//      VolkswagenE.infoCar();
-//      Exercise4Car Volkswagen = new Exercise4Car("Golf", 187, 1.2);
-//      Volkswagen.infoCar();
+      Exercise4Car VolkswagenE = new Exercise4Car("ID3", 199 );
+      VolkswagenE.infoCar();
+      Exercise4Car Volkswagen = new Exercise4Car("Golf", 187, 1.2);
+      Volkswagen.infoCar();
 
 
 //      exercise5 ex5 = new exercise5();

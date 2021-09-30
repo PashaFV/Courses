@@ -12,8 +12,8 @@ public class main2 {
 //        exercise1if.exerciseoneif();
 
 
-//         exercise2 extwo = new exercise2();
-//         exercise2.exercisetwo();
+         exercise2 extwo = new exercise2();
+         exercise2.exercisetwo();
 
 
 //          exercise3 exthree = new exercise3();

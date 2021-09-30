@@ -22,7 +22,10 @@ public class Main5 {
 
         ((Director)director1).addWorker(director2);
 
-        System.out.println(director1);
+        //System.out.println(director1);
         //System.out.println(director2);
+
+        FindService service = new FindService();
+        System.out.println(service.findempl((Director) director1, "Павел"));
     }
 }
