@@ -26,6 +26,6 @@ public class Main5 {
         //System.out.println(director2);
 
         FindService service = new FindService();
-        System.out.println(service.findempl((Director) director1, "Павел"));
+        System.out.println(service.findempl((Director) director1, "Иван"));
     }
 }
