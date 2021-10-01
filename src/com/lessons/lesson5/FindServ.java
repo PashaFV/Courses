@@ -8,12 +8,12 @@ public interface FindServ {
         for (Employee employee : employees) {
             String emplName = employee.FirstName;
             if (emplName.equals(name)){
-                System.out.println("Найден");
+                System.out.println("Сотрудник " + employee.FirstName + " найден");
                 return true;
 
             }
             if (employee.position.equals(PositionEnum.DIRECTOR)){
-                System.out.println("Не найден");
+                System.out.println("Сотрудник " + employee.FirstName + " не найден");
                 return findempl((Director) employee, name);
 
             }
