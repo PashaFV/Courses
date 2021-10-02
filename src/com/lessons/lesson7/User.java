@@ -2,11 +2,17 @@ package com.lessons.lesson7;
 
 import java.util.Objects;
 
-public class User implements Comparable {
+public class User implements Comparable <User> {
 
     private String name;
     private String gender;
     private int age;
+
+    public User(String name, String gender, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -22,7 +28,28 @@ public class User implements Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(User o) {
+        User newUser = (User) o;
+
+        if (age < newUser.age) {
+            return 1;
+        } else if (age < newUser.age){
+            return -1;
+        } else if (age == newUser.age){
+
+            if (name.charAt(0) > newUser.name.charAt(0)) {
+                return 1;
+            }
+            return 0;
+        }
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
