@@ -1,5 +1,8 @@
 package com.lessons.lesson7;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 
 public class User implements Comparable <User> {
@@ -14,42 +17,65 @@ public class User implements Comparable <User> {
         this.age = age;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof User)) return false;
-        User user = (User) o;
-        return age == user.age && Objects.equals(name, user.name) && Objects.equals(gender, user.gender);
+    public void ListUser (){
+
+        List<User> user = new ArrayList<>();
+
+//        User Ivan = new User("Pavel","m", 18);
+//        User Pavel = new User("Ivan","m", 18);
+
+        user.add(new User("Pavel","m", 18));
+        user.add(new User("Ivan","m", 24));
+
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, gender, age);
+    public void setUser () {
+
+        HashSet<User> userSet = new HashSet<User>();
+
+        userSet.add(new User("Petr","m", 15));
+        userSet.add(new User("Olga","g", 19));
+
+
     }
 
     @Override
     public int compareTo(User o) {
+
         User newUser = (User) o;
 
         if (age < newUser.age) {
+            System.out.println("Возраст первого юзера меньше чем второго" );
             return 1;
-        } else if (age < newUser.age){
+        } else if (age > newUser.age){
+            System.out.println("Возраст второго юзера больше чем первого" );
             return -1;
         } else if (age == newUser.age){
 
-            if (name.charAt(0) > newUser.name.charAt(0)) {
+            if (name.charAt(0) == newUser.name.charAt(0)) {
+                System.out.println("Возраст одинаковый - имя не отличается" );
+
                 return 1;
             }
+            System.out.println("Возраст одинаковый - имя отличается" );
             return 0;
         }
+
         return 0;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        User user = (User) o;
+//        return age == user.age && Objects.equals(name, user.name) && Objects.equals(gender, user.gender);
+//    }
+//
+//    @Override
+////    public int hashCode() {
+//        return Objects.hash(name, gender, age);
+//    }
+
+
 }
