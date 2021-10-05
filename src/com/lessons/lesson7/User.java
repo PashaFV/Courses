@@ -17,26 +17,12 @@ public class User implements Comparable <User> {
         this.age = age;
     }
 
-    public void ListUser (){
-
-        List<User> user = new ArrayList<>();
-
-//        User Ivan = new User("Pavel","m", 18);
-//        User Pavel = new User("Ivan","m", 18);
-
-        user.add(new User("Pavel","m", 18));
-        user.add(new User("Ivan","m", 24));
-
+    public String getName() {
+        return name;
     }
 
-    public void setUser () {
-
-        HashSet<User> userSet = new HashSet<User>();
-
-        userSet.add(new User("Petr","m", 15));
-        userSet.add(new User("Olga","g", 19));
-
-
+    public String getGender() {
+        return gender;
     }
 
     @Override

@@ -17,14 +17,5 @@ public class main7 {
 
 
 
-
-
-
-
-
-
-
-
-
     }
 }
