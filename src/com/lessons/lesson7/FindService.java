@@ -3,7 +3,10 @@ package com.lessons.lesson7;
 import java.util.*;
 import java.util.Collections;
 
-public class FindService implements Comparable <User> {
+
+public class FindService implements Comparator<User>{
+
+
 
     public void findUser (Collection<User> collection, String name){
 
@@ -19,21 +22,25 @@ public class FindService implements Comparable <User> {
     }
 
 
-    public void findUserByGender (Collection<User> collection, String gender) {
+    public void findUserByGender (List<User> ListUsers, String gender) {
 
-        for (User user : collection){
-            if (user.getGender() == gender){
-                System.out.println("Пользователи с полом : " + collection );
-
+                Iterator<User> iterator = ListUsers.iterator();
+                while (iterator.hasNext()) {
+                    if (gender != "g") {
+                        System.out.println(iterator.next());
+                    }
+                    }
                 }
-                }
 
-                return;
-            }
 
     @Override
-    public int compareTo(User o) {
-        return 0;
+    public int compare(User o1, User o2) {
+        if (o1.getAge() == o2.getAge()) {
+            return 0;
+        }
+        return o1.getAge() < o2.getAge() ? -1 : 1;
     }
-
 }
+
+
+

@@ -12,7 +12,8 @@ public class Collections {
         HashSet<User> SetUsers = new HashSet<>();
 
         ListUsers.add(new User("Pavel","m", 18));
-        ListUsers.add(new User("Ivan","m", 24));
+        ListUsers.add(new User("Ivan","g", 24));
+        ListUsers.add(new User("Oleg","g", 29));
 
 
 
@@ -20,10 +21,17 @@ public class Collections {
         SetUsers.add(new User("Olga","g", 19));
 
         FindService find = new FindService();
+
         //find.findUser(ListUsers, "Olev");
+
         find.findUserByGender(ListUsers, "m");
-        ListUsers.sort(Comparator.comparing(User::getGender));
-        System.out.println();
+
+
+
+
+
+
+
 
 
     }

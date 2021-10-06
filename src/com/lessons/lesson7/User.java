@@ -25,6 +25,10 @@ public class User implements Comparable <User> {
         return gender;
     }
 
+    public int getAge() {
+        return age;
+    }
+
     @Override
     public int compareTo(User o) {
 
