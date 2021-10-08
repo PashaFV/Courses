@@ -19,12 +19,15 @@ public class Collections {
 
         SetUsers.add(new User("Petr","m", 15));
         SetUsers.add(new User("Olga","g", 19));
+        SetUsers.add(new User("Ivan","m", 45));
 
         FindService find = new FindService();
 
         //find.findUser(ListUsers, "Olev");
 
-        find.findUserByGender(ListUsers, "m");
+        //find.findUserByGender(ListUsers);
+
+        java.util.Collections.sort(ListUsers, new FindService());
 
 
 
