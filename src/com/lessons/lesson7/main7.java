@@ -14,7 +14,8 @@ public class main7 {
 
 
 
-
+FindNumber fi = new FindNumber();
+fi.arrNumbers();
 
 
     }
