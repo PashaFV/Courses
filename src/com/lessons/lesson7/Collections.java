@@ -1,17 +1,14 @@
 package com.lessons.lesson7;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class Collections {
     public static void main(String[] args){
 
         List<User> ListUsers = new ArrayList<>();
-        HashSet<User> SetUsers = new HashSet<>();
+        Set<User> SetUsers = new TreeSet<>();
 
-        ListUsers.add(new User("Pavel","m", 18));
+        ListUsers.add(new User("Pavel","m", 68));
         ListUsers.add(new User("Ivan","g", 24));
         ListUsers.add(new User("Oleg","g", 29));
 
@@ -28,6 +25,11 @@ public class Collections {
         //find.findUserByGender(ListUsers);
 
         java.util.Collections.sort(ListUsers, new FindService());
+        System.out.println(ListUsers);
+
+
+
+
 
 
 

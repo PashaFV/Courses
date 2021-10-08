@@ -4,13 +4,10 @@ import java.util.*;
 import java.util.Collections;
 
 
-
 public class FindService implements Comparator<User>{
 
 
     public void findUser (Collection<User> collection, String name){
-
-
 
         for (User user : collection){
             if (user.getName() == name){
@@ -20,6 +17,7 @@ public class FindService implements Comparator<User>{
         }
         System.out.println("Не найден пользователь: " + name);
     }
+
 
 
     public void findUserByGender (Collection<User> collection) {
@@ -43,7 +41,6 @@ public class FindService implements Comparator<User>{
 
             }
             return o1.getAge() < o2.getAge() ? -1 : 1;
-
 
         }
 
